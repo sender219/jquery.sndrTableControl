@@ -46,9 +46,16 @@ class_row_selected
 CSS class for selected row (TR-tag)
 
 ```
-fn_enter(selected_row, ctrl_key),
-fn_enter(selected_row, ctrl_key),
+fn_*(selected_row, ctrl_key)
 ```
-Callback functions for KeyDown event.
-First param - selected row (TR);
-Second param - ctrlKey event attribute (boolean)
+Callback functions for KeyDown event.  
+First param - selected row (TR);  
+Second param - ctrlKey event attribute (boolean)  
+Full list of supported function:
+* fn_enter
+* fn_space
+* fn_escape
+* fn_left
+* fn_right
+* fn_insert
+* fn_delete
