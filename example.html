@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>sndrTableControl</title>
+		<script src='https://code.jquery.com/jquery-1.11.1.min.js'></script>
+		<script src='js/jquery.sndrTableControl.js'></script>
+	</head>
+	<style>
+		.row-selected td
+		{
+			background-color:black;
+			color:white;
+		}		
+	</style>
+	<script type='text/javascript'>
+	$(document).ready(function()
+	{
+		$('table:first').sndrTableControl({
+			fn_enter:function(selected)
+			{
+				alert('fn_enter\r' + selected.html());
+			},
+			class_row_selected: 'row-selected'
+		}).focus();
+	});
+	</script>
+	<body>
+		<table>
+			<tbody>
+				<tr>
+					<td>cell-1-1</td>
+					<td>cell-1-2</td>
+					<td>cell-1-3</td>
+				</tr>
+				<tr>
+					<td>cell-2-1</td>
+					<td>cell-2-2</td>
+					<td>cell-2-3</td>
+				</tr>
+				<tr>
+					<td>cell-3-1</td>
+					<td>cell-3-2</td>
+					<td>cell-3-3</td>
+				</tr>
+			</tbody>
+			</table>
+		</body>
+	</body>
+</html>
