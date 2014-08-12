@@ -5,12 +5,15 @@ A very simple jQuery plugin for control any HTML table.
 
 #How to use
 
-1. Include external script files
+1\. Include external script files
+	
 ```html
 <script src='https://code.jquery.com/jquery-1.11.1.min.js'></script>
 <script src='jquery.sndrTableControl.js'></script>
 ```
-2. Define a client-side JavaScript
+
+2\. Define a client-side JavaScript
+	
 ```js
 $(document).ready(function()
 {
@@ -23,7 +26,9 @@ $(document).ready(function()
 	}).focus();
 });
 ```
-3. Define style information (for row-selected class)
+
+3\. Define style information (for row-selected class)
+
 ```html
 <style>
 .row-selected td
