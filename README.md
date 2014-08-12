@@ -51,7 +51,7 @@ fn_*(selected_row, ctrl_key)
 Callback functions for KeyDown event.  
 First param - selected row (TR);  
 Second param - ctrlKey event attribute (boolean)  
-Full list of supported function:
+Full list of supported functions:
 * fn_enter
 * fn_space
 * fn_escape
