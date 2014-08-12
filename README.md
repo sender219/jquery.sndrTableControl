@@ -3,9 +3,47 @@ jquery.sndrTableControl
 
 A very simple jQuery plugin for control any HTML table.
 
-1\.Include external script files
+#How to use
 
+1. Include external script files
 ```html
 <script src='https://code.jquery.com/jquery-1.11.1.min.js'></script>
 <script src='jquery.sndrTableControl.js'></script>
 ```
+2. Define a client-side JavaScript
+```js
+$(document).ready(function()
+{
+	$('table:first').sndrTableControl({
+		fn_enter:function(selected)
+		{
+			alert('fn_enter\r' + selected.html());
+		},
+		class_row_selected: 'row-selected'
+	}).focus();
+});
+```
+3. Define style information (for row-selected class)
+```html
+<style>
+.row-selected td
+{
+	background-color:black;
+	color:white;
+}		
+</style>
+```
+#Options
+
+```
+class_row_selected
+```
+CSS class for selected row (TR-tag)
+
+```
+fn_enter(selected_row, ctrl_key),
+fn_enter(selected_row, ctrl_key),
+```
+Callback functions for KeyDown event.
+First param - selected row (TR);
+Second param - ctrlKey event attribute (boolean)
