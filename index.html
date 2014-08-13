@@ -31,23 +31,23 @@
 		<p>1. Include external script files</p>
 		<pre>
 			<code>
-			&lt;script src='https://code.jquery.com/jquery-1.11.1.min.js'&gt;&lt;/script&gt;
-			&lt;script src='jquery.sndrTableControl.js'&gt;&lt;/script&gt;
+&lt;script src='https://code.jquery.com/jquery-1.11.1.min.js'&gt;&lt;/script&gt;
+&lt;script src='jquery.sndrTableControl.js'&gt;&lt;/script&gt;
 			</code>
 		</pre>
 		<p>2. Define a client-side JavaScript</p>
 		<pre>
 			<code>
-			$(document).ready(function()
-			{
-				$('table:first').sndrTableControl({
-					fn_enter:function(selected)
-					{
-						alert('fn_enter\r' + selected.html());
-					},
-					class_row_selected: 'row-selected'
-				}).focus();
-			});
+$(document).ready(function()
+{
+	$('table:first').sndrTableControl({
+		fn_enter:function(selected)
+		{
+			alert('fn_enter\r' + selected.html());
+		},
+		class_row_selected: 'row-selected'
+	}).focus();
+});
 			</code>
 		</pre>
 	</section>
